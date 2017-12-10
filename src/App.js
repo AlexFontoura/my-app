@@ -1,19 +1,13 @@
 import React from "react";
+import CardProducts from "./Components/CardProduct/CardProduct";
+import Camisa from "./img/manto.jpg";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+var image={
+    src: Camisa,
+    alt: "Camisa do SP"
+};
 
-export default App;
+export default ()=>(
+  <CardProducts name="Camisa do São Paulo" price="149,90" image={image} />
+);
+
